@@ -17,7 +17,7 @@ date:   2017-01-02 18:21:11 +0000
 
 ### Output
 
-{{ site.members | group_by_exp:"item","item.age > 30" | sort: 'first' }}
+{{ site.members | group_by_exp:"item", "item.age > 30" }}
 
 
 
@@ -45,7 +45,7 @@ date:   2017-01-02 18:21:11 +0000
 
     <ul>
     {% for item in group.items %}
-        <li>{{item.name}}</li>
+        <p>{{item.name}}</p>
     {%endfor%}
     </ul>
 {%endfor%}
