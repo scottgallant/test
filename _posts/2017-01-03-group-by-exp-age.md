@@ -45,7 +45,7 @@ date:   2017-01-02 18:21:11 +0000
 
     <ul>
     {% for item in group.items %}
-        <p>{{item.name}}</p>
+        <li>{{item.name}}</li>
     {%endfor%}
     </ul>
 {%endfor%}
